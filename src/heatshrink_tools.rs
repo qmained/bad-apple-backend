@@ -45,9 +45,8 @@ fn main1() {
         }
     }
 }
-
-fn main2() {
-    let input: &[u8] = include_bytes!("../bad_apple.bin");
+pub fn main2() {
+    let input: &[u8] = include_bytes!("../bad_apple_full.bin");
     let mut compressed = [0u8; 8 * 1024 * 500];
     let len = compressed.len();
 
